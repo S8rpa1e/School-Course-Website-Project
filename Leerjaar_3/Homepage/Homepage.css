@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    offset: hidden;
+}
+
+
+.Navigation {
+    background-color: #e9e9e9;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 0 20px;
+}
+
+
+.Navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    height: 60px;
+}
+
+
+.Navigation a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 10px;
+}
+
+.Navigation a:hover {
+    background-color: #111;
+    border-radius: 5px;
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.SearchBar input {
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #3a72ed;
+}
+
+button:hover {
+    background-color: #ddd;
+}
+
+#AboutLink {
+    display: flex;
+    margin-left: 1400px;
+}
