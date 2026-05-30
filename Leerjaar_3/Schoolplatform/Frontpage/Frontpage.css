@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+ /* rgba(128, 255, 255, 0.185) */
+body {
+    min-height: 100vh;
+    background-color: #f7f7f7 ;
+    display: flex;
+    flex-direction: column;
+}
+
+h1, p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1 {
+    font-size: 58px;
+    margin-top: -10px;
+}
+p {
+    font-size: 16px;
+    font-weight: lighter;
+    margin-top: 12px;
+}
+#FontPage {
+    justify-content: center;
+    align-items: center;
+    padding-top: 340px;
+    display: flex;
+    flex-direction: column;
+}
+#FontPageButton {
+    margin: 25px;
+}
+ button {
+    padding: 12px 25px;
+    margin: 0 10px 0 5px;
+    border-radius: 7.5px;
+    border: 0;
+}
+#SignUp {
+    background-color: #3a72ed;
+    color: white;
+    font-weight: bold;
+}
+#LogIn {
+    background-color: white;
+    border: 1.5px solid lightgray;
+    color: #3a72ed;
+    font-weight: bolder;
+}
+svg {
+    position: relative;
+    display: flex;  
+    top: -40px;
+    background-color: #5082ef;
+    border-radius: 10px;
+    padding: 2px 5px 2px 5px;
+    width: 75px;
+    height: 75px;
+    
+}
+#Secbuttons {
+    display: flex;
+    position: relative;
+    top: -590px;
+    left: 1700px;
+}
