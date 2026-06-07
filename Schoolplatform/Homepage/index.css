@@ -1,0 +1,159 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+.Navigation {
+    position: fixed; /* or absolute */
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    z-index: 99999999;
+    background-color: #f1efef;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+
+#LoginButton {
+    padding: 0x;
+}
+#AboutLink {
+    padding-left: 1450px;
+}
+.Navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    height: 60px;
+}
+
+
+.Navigation a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 10px;
+}
+
+.Navigation a:hover {
+    background-color: #111;
+    border-radius: 5px;
+}
+
+.SearchBar input {
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+
+#color1 {
+    display: block;
+    position: absolute;
+    width: 1200px;
+    height: 620px;
+    left: 900px;
+    top: -50px;
+    background-color: #093981 ;
+    border-radius: 25px;
+}
+#colors {
+    position: absolute;
+    z-index: 1;
+    left: 0px;
+    top: 30px;
+}
+
+#color3 {
+    display: block;
+    position: absolute;
+    width: 350px;
+    height: 420px;
+    left: 1000px;
+    top: 70px;
+    background-color:  #fdd300 ;
+    border-radius: 200px;
+    transform: rotate(-110deg);
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+#Color2 {
+    display: block;
+    position: absolute;
+    width: 350px;
+    height: 380px;
+    left: 800px;
+    top : 100px;
+    background-color: #fff5b0;
+    border-radius: 200px;
+    transform: rotate(60deg);
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+img {
+    position: absolute;
+    width: 550px;
+    height: 550px;
+    left: 800px;
+    top: 50px;
+}
+.Left-Text {
+    z-index: 1000;
+    flex-direction: row;
+    width: 600px;
+    height: 500px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 150px;
+    top: 10vh;
+}
+#LeftTextHead{
+    font-size: 58px;
+    font-family: "Udemy Sans", "Noto Sans JP", "Vazirmatn", -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+#P1 {
+    font-weight: 100;
+    font-size: 20px;
+    font-family: "Udemy Sans", "Noto Sans JP", "Vazirmatn", -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.Textboxes {
+    z-index: 9999;
+    display: flex;
+    flex-direction: row;
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    top: 800px;
+    left: 500px;
+}
+
+#TextBox1 {
+    background-color: #093981;
+    width: 500px;
+    height: 400px;
+    margin: 0 40px 0 0;
+}
+
+#TextBox2 {
+    background-color: #fdd300;
+    width: 500px;
+    height: 400px;
+}
+
+#TextBox3 {
+    background-color: aqua;
+    width: 500px;
+    height: 400px;
+     margin: 0 0 0 40px
+}

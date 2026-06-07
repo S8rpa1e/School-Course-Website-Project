@@ -1,0 +1,384 @@
+/* ===========================
+   COURSES PAGE — courses.css
+   Matches index.css color scheme:
+   Primary blue: #093981
+   Accent yellow: #fdd300
+   =========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap');
+
+:root {
+    --blue:    #093981;
+    --yellow:  #fdd300;
+    --yellow-light: #fff5b0;
+    --white:   #ffffff;
+    --off-white: #f8f7f4;
+    --text-dark: #0d0d0d;
+    --text-muted: #5a5a6a;
+    --card-radius: 16px;
+    --shadow: 0 4px 24px rgba(9, 57, 129, 0.10);
+    --shadow-hover: 0 12px 40px rgba(9, 57, 129, 0.18);
+    --font-display: 'Syne', sans-serif;
+    --font-body: 'DM Sans', sans-serif;
+}
+
+/* ── Body reset for courses page ── */
+body {
+    background-color: var(--off-white);
+    font-family: var(--font-body);
+    color: var(--text-dark);
+}
+
+/* ── Navigation tweaks for courses page ── */
+/* Override the fixed about-link offset so it works on all pages */
+.Navigation #AboutLink {
+    padding-left: 0;
+    margin-left: auto;
+}
+
+/* Make the search bar a proper form row */
+.Navigation .SearchBar {
+    display: flex;
+    align-items: center;
+    gap: 0;
+}
+
+.Navigation .SearchBar input {
+    padding: 8px 14px;
+    border-radius: 8px 0 0 8px;
+    border: 2px solid #ddd;
+    border-right: none;
+    outline: none;
+    font-family: var(--font-body);
+    font-size: 14px;
+    width: 220px;
+    transition: border-color 0.2s;
+}
+
+.Navigation .SearchBar input:focus {
+    border-color: var(--blue);
+}
+
+.search-btn {
+    padding: 8px 18px;
+    background-color: var(--blue);
+    color: var(--white);
+    border: none;
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+    font-family: var(--font-display);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    transition: background 0.2s;
+}
+
+.search-btn:hover {
+    background-color: #07296a;
+}
+
+/* ── Page Header ── */
+.courses-header {
+    padding: 100px 60px 40px;
+    background: linear-gradient(135deg, var(--blue) 0%, #0d4bb5 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.courses-header::before {
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: var(--yellow);
+    border-radius: 50%;
+    opacity: 0.08;
+    top: -200px;
+    right: -100px;
+}
+
+.courses-header::after {
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: var(--yellow-light);
+    border-radius: 50%;
+    opacity: 0.06;
+    bottom: -150px;
+    left: 200px;
+}
+
+.courses-header-inner {
+    position: relative;
+    z-index: 1;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.courses-title {
+    font-family: var(--font-display);
+    font-size: clamp(32px, 4vw, 52px);
+    font-weight: 800;
+    color: var(--white);
+    margin: 0 0 10px;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+}
+
+.courses-title .highlight {
+    color: var(--yellow);
+}
+
+.courses-subtitle {
+    font-family: var(--font-body);
+    font-size: 16px;
+    color: rgba(255,255,255,0.72);
+    margin: 0;
+    font-weight: 300;
+}
+
+/* ── Main Container ── */
+.courses-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 48px 40px 80px;
+}
+
+/* ── Grid: 4 columns ── */
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    margin-bottom: 48px;
+}
+
+/* ── Course Card ── */
+.course-card {
+    background: var(--white);
+    border-radius: var(--card-radius);
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    position: relative;
+}
+
+.course-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-hover);
+}
+
+/* Colored top accent bar */
+.course-card-accent {
+    height: 5px;
+    background: linear-gradient(90deg, var(--blue), var(--yellow));
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.course-card-body {
+    padding: 20px 20px 12px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.course-tag {
+    display: inline-block;
+    font-family: var(--font-display);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--blue);
+    background: rgba(9, 57, 129, 0.08);
+    padding: 3px 10px;
+    border-radius: 100px;
+    width: fit-content;
+}
+
+.course-card-title {
+    font-family: var(--font-display);
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin: 4px 0 0;
+    line-height: 1.3;
+    letter-spacing: -0.01em;
+}
+
+.course-card-desc {
+    font-size: 13px;
+    color: var(--text-muted);
+    line-height: 1.55;
+    margin: 0;
+    flex: 1;
+    /* Clamp to 3 lines */
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.course-card-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-top: 8px;
+    padding-top: 10px;
+    border-top: 1px solid #f0eff5;
+}
+
+.course-card-meta span {
+    font-size: 12px;
+    color: var(--text-muted);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.course-card-footer {
+    padding: 14px 20px 18px;
+}
+
+.btn-enroll {
+    display: block;
+    text-align: center;
+    background-color: var(--blue);
+    color: var(--white);
+    text-decoration: none;
+    padding: 10px 0;
+    border-radius: 8px;
+    font-family: var(--font-display);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    transition: background 0.2s, transform 0.15s;
+}
+
+.btn-enroll:hover {
+    background-color: var(--yellow);
+    color: var(--text-dark);
+    transform: scale(1.02);
+}
+
+/* ── Pagination ── */
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    flex-wrap: wrap;
+    margin-top: 16px;
+}
+
+.page-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 40px;
+    height: 40px;
+    padding: 0 10px;
+    border-radius: 8px;
+    background: var(--white);
+    color: var(--blue);
+    text-decoration: none;
+    font-family: var(--font-display);
+    font-size: 14px;
+    font-weight: 600;
+    border: 2px solid transparent;
+    box-shadow: 0 2px 8px rgba(9,57,129,0.07);
+    transition: all 0.18s ease;
+}
+
+.page-btn:hover {
+    border-color: var(--blue);
+    background: rgba(9,57,129,0.05);
+}
+
+.page-btn.active {
+    background-color: var(--blue);
+    color: var(--white);
+    border-color: var(--blue);
+    box-shadow: 0 4px 14px rgba(9,57,129,0.28);
+}
+
+.page-edge {
+    font-size: 16px;
+    color: var(--text-muted);
+}
+
+.page-ellipsis {
+    color: var(--text-muted);
+    font-size: 16px;
+    padding: 0 4px;
+    user-select: none;
+}
+
+.page-info {
+    font-family: var(--font-body);
+    font-size: 13px;
+    color: var(--text-muted);
+    margin-left: 10px;
+}
+
+/* ── No Results ── */
+.no-results {
+    text-align: center;
+    padding: 80px 20px;
+    grid-column: 1 / -1;
+}
+
+.no-results-icon {
+    font-size: 56px;
+    margin-bottom: 16px;
+}
+
+.no-results h2 {
+    font-family: var(--font-display);
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 8px;
+}
+
+.no-results p {
+    color: var(--text-muted);
+    font-size: 15px;
+    margin-bottom: 24px;
+}
+
+.btn-primary {
+    display: inline-block;
+    background: var(--blue);
+    color: var(--white);
+    padding: 12px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 14px;
+    transition: background 0.2s;
+}
+
+.btn-primary:hover {
+    background: #07296a;
+}
+
+/* ── Responsive ── */
+@media (max-width: 1200px) {
+    .courses-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 860px) {
+    .courses-grid { grid-template-columns: repeat(2, 1fr); }
+    .courses-container { padding: 32px 20px 60px; }
+    .courses-header { padding: 90px 20px 32px; }
+}
+
+@media (max-width: 540px) {
+    .courses-grid { grid-template-columns: 1fr; }
+}
