@@ -30,7 +30,7 @@
         <li id="AboutLink"><a href="#">About</a></li>
          
         <li id="LoginButton">
-            <button >Login</button>
+            <button id="ButtonLogin">Login</button>
         </li>
     </ul>
 </div>
@@ -42,7 +42,7 @@
         <div id="color3"></div>
 
         <div>
-            <img src="kid.png" alt="">
+            <img id="kid" src="kid.png" alt="">
         </div>
     </div>
 
@@ -54,39 +54,10 @@
         <div id="left-small-text">
             <p id="P1">Build in-demand skills fast and advance your career in a changing job market</p>
         </div>
+        
+        <button id="StartLearningButtons">Start learning</button>
     </div>
 
-    <div class="Textboxes">
-        <div id= TextBox1 >
-            <div id="Text1.1">
-                <H1>Certified Teachers</H1>
-            </div>
-            
-            <div id="Text1.2">
-                <p></p>
-            </div>
-        </div>
-
-        <div id="TextBox2">
-            <div id="Text2.1">
-                <h1></h1>
-            </div>
-
-            <div id="Text2.2">
-                <p>  </p>
-            </div>
-        </div>
-
-        <div id="TextBox3">
-            <div id="Text3.1">
-                <h1></h1>
-            </div>
-
-            <div id="Text3.2">
-                <p></p>
-            </div>
-        </div>
-    </div>
     
 </body>
 </html>

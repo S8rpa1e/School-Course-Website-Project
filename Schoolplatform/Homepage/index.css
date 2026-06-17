@@ -18,11 +18,33 @@ body {
     padding: 0 20px;
 }
 
-#LoginButton {
-    padding: 0x;
+
+#ButtonLogin {
+    font-size: 18px;
+    background-color:  #093981;
+    border-radius: 5px;
+    width: 80px;
+    height: 40px;
+    border-width: 0px;
+    font-family: "Udemy Sans", "Noto Sans JP", "Vazirmatn", -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+#StartLearningButtons {
+    border-width: 0.5px;
+    border-radius: 5px;
+    font-size: large;
+    position: absolute;
+    top: 400px;
+    left: 0px;
+    width: 200px;
+    height: 50px;
+    background-color: #2a6aca;
+    font-family: "Udemy Sans", "Noto Sans JP", "Vazirmatn", -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 #AboutLink {
-    padding-left: 1450px;
+    padding-left: 1335px;
+    font-weight: 400;
+    font-size: large;
+    font-family: "Udemy Sans", "Noto Sans JP", "Vazirmatn", -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 .Navigation ul {
     list-style: none;
@@ -38,13 +60,14 @@ body {
 
 
 .Navigation a {
+    font-family: "Udemy Sans", "Noto Sans JP", "Vazirmatn", -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     color: rgb(0, 0, 0);
     text-decoration: none;
     padding: 10px;
 }
 
 .Navigation a:hover {
-    background-color: #111;
+    background-color: #b1afaf1c;
     border-radius: 5px;
 }
 
@@ -127,33 +150,3 @@ img {
     font-family: "Udemy Sans", "Noto Sans JP", "Vazirmatn", -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
-.Textboxes {
-    z-index: 9999;
-    display: flex;
-    flex-direction: row;
-    width: 1000px;
-    height: 1000px;
-    position: absolute;
-    top: 800px;
-    left: 500px;
-}
-
-#TextBox1 {
-    background-color: #093981;
-    width: 500px;
-    height: 400px;
-    margin: 0 40px 0 0;
-}
-
-#TextBox2 {
-    background-color: #fdd300;
-    width: 500px;
-    height: 400px;
-}
-
-#TextBox3 {
-    background-color: aqua;
-    width: 500px;
-    height: 400px;
-     margin: 0 0 0 40px
-}
